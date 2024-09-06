@@ -1,0 +1,11 @@
+﻿@font-face{
+  font-family: 'ClockFont';
+  src: url('Fonts/DSEG7Classic.ttf');
+}
+
+
+body{
+  font-family: 'ClockFont';
+  font-size: clamp(20px,7vw,100px);
+  text-align: center;
+}
