@@ -30,12 +30,13 @@ function PlayAnnounce(TIME){
 }
 
 function displayTime(){
-  const padZero = value => value.toString().padStart(2, '0');
+  const pad2Zero = value => value.toString().padStart(2, '0');
+  const pad3Zero = value => value.toString().padStart(3, '0');
   const now = new Date();
-  const hour = padZero(now.getHours());
-  const minute = padZero(now.getMinutes());
-  const second = padZero(now.getSeconds());
-  const dsecond = padZero(now.getMilliseconds()).slice(0, 2);
+  const hour = pad2Zero(now.getHours());
+  const minute = pad2Zero(now.getMinutes());
+  const second = pad2Zero(now.getSeconds());
+  const dsecond = pad3Zero(now.getMilliseconds()).slice(0, 2);
 
   
   if(now.getSeconds()!==last.getSeconds()){
