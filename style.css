@@ -1,11 +1,45 @@
-﻿@font-face{
+﻿@font-face {
   font-family: 'ClockFont';
   src: url('Fonts/DSEG7Classic.ttf');
 }
 
 
-body{
+body {
   font-family: 'ClockFont';
-  font-size: clamp(20px,7vw,100px);
   text-align: center;
+}
+
+.main {
+  position: relative;
+  align-items: center;
+}
+
+.clock {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  font-size: clamp(20px, 7vw, 100px);
+  /* HH:MM:SSのサイズ */
+  /* background-color: aqua; */
+  line-height: 1;
+  /* 行の高さを調整 */
+}
+
+.dsec {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  /* background-color: burlywood; */
+  font-size: clamp(10px, 3.5vw, 50px);
+  /* HH:MM:SSの半分のサイズ */
+  line-height: 1;
+  /* 行の高さを調整 */
+
+  position: absolute;
+  /* 絶対位置指定 */
+  float: right;
+  bottom: 0;
+  /* 下端を揃える */
+  margin-left: 5px;
+  /* 少し余白を追加 */
 }
